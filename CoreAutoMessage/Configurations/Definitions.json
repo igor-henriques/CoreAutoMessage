@@ -1,0 +1,18 @@
+﻿{
+  "CANAL DE ENVIO": 9,
+  "COR DA MENSAGEM": "",
+  "INTERVALO ENTRE MENSAGENS ALEATÓRIAS (EM MINUTOS)": 1,
+  "MENSAGENS ALEATÓRIAS": [
+    "Primeira Mensagem",
+    "Segunda Mensagem"
+  ],
+  "MENSAGENS PROGRAMADAS": [
+    {
+      "Mensagem": "Mais um minuto se passou",
+      "Hora de Envio": 23,
+      "Minuto de Envio": null,
+      "Segundo de Envio": null,
+      "Dia da Semana de Envio": null
+    }
+  ]
+}
