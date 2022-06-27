@@ -53,16 +53,13 @@ public class AutoMessageWorker : BackgroundService
     {
         foreach (var message in autoMessage.ScheduledMessages)
         {
-            if (message.Minute is not null & message.Minute != DateTime.Now.Minute)
+            if (message?.Minute != DateTime.Now.Minute)
                 continue;
 
-            if (message.Hour is not null & message.Hour != DateTime.Now.Hour)
-                continue;
+            if (message?.Hour != DateTime.Now.Hour)
+                continue;            
 
-            if (message.Second is not null & message.Second != DateTime.Now.Second)
-                continue;
-
-            if (message.DayOfWeek is not null & message.DayOfWeek != DateTime.Now.DayOfWeek)
+            if (message?.DayOfWeek != DateTime.Now.DayOfWeek)
                 continue;
 
             logger.LogInformation(message.Message);
