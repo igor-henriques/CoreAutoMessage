@@ -3,10 +3,10 @@
 public class AutoMessageWorker : BackgroundService
 {
     int randomMessageTimeControl = 0;
-    private GProvider gprovider;
+    private readonly GProvider gprovider;
     private readonly ILogger<AutoMessageWorker> logger;
-    private AutoMessageDefinitions autoMessage;
-    Random random = new Random();
+    private readonly AutoMessageDefinitions autoMessage;
+    private readonly Random random = new Random();
 
     /// <summary>
     /// Inicia um Timer que roda o comando de envio de mensagem ao servidor.

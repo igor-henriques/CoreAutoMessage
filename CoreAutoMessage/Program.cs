@@ -8,7 +8,7 @@ await Host.CreateDefaultBuilder()
             services.AddSingleton<GProvider>();
             services.AddSingleton<LogWriter>();            
 
-            services.AddHostedService<LicenseControl>();
+            //services.AddHostedService<LicenseControl>();
             services.AddHostedService<AutoMessageWorker>();            
         }).Build().RunAsync();
 
