@@ -23,7 +23,7 @@
 
   <ItemGroup>
     <Reference Include="PWToolKit">
-      <HintPath>E:\PWToolKit-master\PWToolKit\bin\Release\net6.0\win-x64\PWToolKit.dll</HintPath>
+      <HintPath>D:\PWToolKit-master\PWToolKit\bin\Release\net6.0\win-x64\PWToolKit.dll</HintPath>
     </Reference>
   </ItemGroup>
 
